@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: steelblue;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.empty {
+  background-color: white;
+  width: 150px;
+  height: 150px;
+  border: 4px solid black;
+  margin: 20px 0;
+}
+
+.fill {
+  cursor: grab;
+  background-image: url("https://picsum.photos/200/300");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.dragging {
+  cursor: grabbing;
+  border: 4px solid gray;
+}
+
+.dragged_over {
+  border: 4px dashed white;
+  background-color: black;
+}
